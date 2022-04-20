@@ -10,8 +10,16 @@
 <body>
     
     <div id="app">
-        <h1>{{message}}</h1>
+        <h1><em>{{message}}</em></h1>
         <img :src="image" alt="">
+        <div class="team_choise">
+            <label>Type your english football team</label>
+            <input type="text" v-model="team" placeholder="...">
+            <p>Your favourite football team is</p>
+            <div class="team">{{team}}</div>
+        </div>
+        <!-- /.team_choise -->
+        
     </div>
     <!-- /#app -->
 
